@@ -18,7 +18,7 @@
             //dimensions
             var CANVAS_HEIGHT = 500;
             var CANVAS_WIDTH = 700;
-            color red = color(178,18,18);
+            PImage b;
             color orange = color(255,83, 13);
             color blue = color(9, 113, 178);
             color pink = color(255, 182, 193);
@@ -30,6 +30,7 @@
           void setup() {
                 size(CANVAS_WIDTH,CANVAS_HEIGHT);
                 background(red);
+                b = loadImage("res/approach slide 1.png");
             }
             
           var scene_counter = 0;
@@ -53,6 +54,7 @@
               
                     //right arrow is pressed (only option)
                     //background(orange);
+                    image(b, 0, 0);
                     scene_counter = 1;
                     //@ story page
                     
