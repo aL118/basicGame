@@ -81,22 +81,30 @@
                 } 
                 //////////////////////////////////
                 //maze ends, start choice 
-                else if (keyCode == 39 && scene_counter == 6) {
-                    scene_counter+=;
-                }else if (keyCode == 37 && scene_counter == 7) {
-                    //approach
-                    scene_counter+=;
+                else if (keyCode == 39 && scene_counter == 5) {
+                    scene_counter = 6;
+                }else if (keyCode == 37 && scene_counter == 6) {
+                    //start approach, get jailed
+                    scene_counter = 7;
                 }else if (keyCode == 39 && scene_counter == 7) {
-                    //hide
-                    scene_counter+=;
+                    //start hide
+                    scene_counter = 14;//skip down
+                //continues approach branch
                 }else if (keyCode == 37 && scene_counter == 8) {
                     //can't publish
-                    scene_counter+=;
+                    scene_counter = 8;
+                }else if (keyCode == 39 && scene_counter == 9) {
+                    //publish but public unsure
+                    scene_counter = 9;
+                //continues hide branch (approach ends at p.13 somehow)
+                }else if (keyCode == 37 && scene_counter == 14) {
+                    //can't publish
+                    scene_counter = 15;
+                }else if (keyCode == 39 && scene_counter == 15) {
+                    //publish and public believes
+                    scene_counter = 16;
                 }
-                
-                
-                
-                
+                                        
                 /////////////////////////////////////////
                 
                 
